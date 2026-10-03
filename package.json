@@ -1,0 +1,11 @@
+{
+  "name": "supplier-risk-platform",
+  "version": "1.0.0",
+  "description": "Secure MCP-Based Agentic Supplier Risk Analysis System",
+  "scripts": {
+    "start": "python run_demo.py",
+    "test": "pytest",
+    "eval": "python -m eval.evaluator",
+    "fuzz": "python -m tests.test_fuzz_tools"
+  }
+}

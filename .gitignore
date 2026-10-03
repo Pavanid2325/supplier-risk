@@ -1,0 +1,131 @@
+# ============================================
+# Supplier Risk Platform - .gitignore
+# ============================================
+
+# --------------------
+# Environment / Secrets
+# --------------------
+.env
+.env.*
+!.env.example
+
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --------------------
+# Testing / Coverage
+# --------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --------------------
+# Type checkers / Linters
+# --------------------
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# --------------------
+# Node / React / Vite
+# --------------------
+node_modules/
+frontend/node_modules/
+
+# Vite build output
+frontend/dist/
+dist/
+
+# Vite cache
+.vite/
+frontend/.vite/
+
+# --------------------
+# Logs
+# --------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------
+# SQLite
+# --------------------
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+
+# --------------------
+# Temporary files
+# --------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache/
+tmp/
+temp/
+
+# --------------------
+# VS Code
+# --------------------
+.vscode/
+
+# --------------------
+# JetBrains IDEs
+# --------------------
+.idea/
+*.iml
+
+# --------------------
+# Windows
+# --------------------
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# --------------------
+# macOS
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --------------------
+# Project-specific runtime files
+# --------------------
+srp_ledger.db
+
+# Keep source/data files required by project
+!backend/data/
+!backend/data/**
+!eval/golden_set.json

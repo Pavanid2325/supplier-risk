@@ -1,0 +1,29 @@
+[
+  {
+    "id": "OFF-001",
+    "question": "What is the stock level of Ergonomic Chairs?",
+    "item_id": "ITEM-101",
+    "required_tenant": "office-tenant",
+    "expected_facts": ["150", "units"],
+    "allowed_citations": ["OFF-DOC-101"],
+    "expected_classification": "INVENTORY_QUERY"
+  },
+  {
+    "id": "OFF-002",
+    "question": "Who is the primary vendor for Standing Desks?",
+    "item_id": "ITEM-102",
+    "required_tenant": "office-tenant",
+    "expected_facts": ["Workspace Dynamics"],
+    "allowed_citations": ["OFF-DOC-102"],
+    "expected_classification": "VENDOR_QUERY"
+  },
+  {
+    "id": "OFF-003",
+    "question": "Are we exposed if ITEM-103 paper supply fails?",
+    "item_id": "ITEM-103",
+    "required_tenant": "office-tenant",
+    "expected_facts": ["Low exposure", "recycled paper"],
+    "allowed_citations": ["OFF-DOC-103"],
+    "expected_classification": "RISK_QUERY"
+  }
+]
